@@ -15,10 +15,11 @@
     "build:electron": "quasar build -m electron"
   },
   "dependencies": {
-    "axios": "^0.21.1",
-    "pinia": "^2.0.11",
     "@quasar/extras": "^1.0.0",
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
+    "mathjs": "^10.4.0",
+    "pinia": "^2.0.11",
     "quasar": "^2.6.0",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0"
