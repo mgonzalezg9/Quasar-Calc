@@ -1,6 +1,21 @@
-# Quasar App (quasar-project)
+# Quasar Calculator
 
-A Quasar Project
+## Table Of Contents
+
+- [Introduction](#introduction)
+- [Technologies](#technologies)
+
+## Introduction
+
+A simple Quasar calculator project. The goal is to learn Quasar technology along with Vue 3 composition API and Pinia store management.
+
+## Technologies
+
+- [TypeScript](https://www.typescriptlang.org/)
+- [Quasar](https://quasar.dev/)
+- [Vue 3](https://vuejs.org/)
+- [Pinia](https://reactnavigation.org/)
+- [MathJS](https://www.npmjs.com/package/mathjs)
 
 ## Install the dependencies
 
