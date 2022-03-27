@@ -11,6 +11,7 @@
     - [Lint the files](#lint-the-files)
     - [Format the files](#format-the-files)
     - [Build the app for production](#build-the-app-for-production)
+    - [Android build](#android-build)
     - [Customize the configuration](#customize-the-configuration)
 
 ## Introduction
@@ -24,6 +25,7 @@ A simple Quasar calculator project. The goal is to learn Quasar technology along
 - [Vue 3](https://vuejs.org/)
 - [Pinia](https://reactnavigation.org/)
 - [MathJS](https://www.npmjs.com/package/mathjs)
+- [ElectronJS](https://www.electronjs.org/)
 
 ## Install the dependencies
 
@@ -75,6 +77,31 @@ electron: {
     },
   },
 }
+```
+
+### Android build
+
+`TODO` The Android build is pending because it requires the installation of Android Studio and other stuff. However, you can follow this steps to prepare Android build:
+
+- Install Java JDK:
+
+```bash
+sudo apt-get update
+sudo apt-get install openjdk-8-jdk
+java -version # Verify good installation
+```
+
+- Install Android Studio:
+  (https://stackoverflow.com/questions/36198165/failed-to-find-android-home-environment-variable)
+  `TODO`
+
+- Add Cordova plugin to Quasar:
+
+```bash
+quasar mode add cordova
+cd src-cordova
+cordova platform add android
+cordova requirements # Check if all requirements are met
 ```
 
 ### Customize the configuration
