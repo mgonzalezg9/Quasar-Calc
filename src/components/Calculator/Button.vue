@@ -1,8 +1,8 @@
 <template>
   <q-btn
     class="full-width text-h6"
-    text-color="white"
-    color="indigo"
+    :text-color="numeric ? 'grey-8' : 'white'"
+    :color="numeric ? 'grey-2' : 'indigo'"
     @click="handleClick"
   >
     <slot>{{ fallbackContent }}</slot>
@@ -11,6 +11,9 @@
 
 <script setup lang="ts">
 const emit = defineEmits<{ (e: 'click'): void }>();
+defineProps<{
+  numeric?: boolean;
+}>();
 
 const fallbackContent = '-';
 function handleClick() {

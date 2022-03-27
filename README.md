@@ -2,8 +2,16 @@
 
 ## Table Of Contents
 
-- [Introduction](#introduction)
-- [Technologies](#technologies)
+- [Quasar Calculator](#quasar-calculator)
+  - [Table Of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Technologies](#technologies)
+  - [Install the dependencies](#install-the-dependencies)
+    - [Start the app in development mode (hot-code reloading, error reporting, etc.)](#start-the-app-in-development-mode-hot-code-reloading-error-reporting-etc)
+    - [Lint the files](#lint-the-files)
+    - [Format the files](#format-the-files)
+    - [Build the app for production](#build-the-app-for-production)
+    - [Customize the configuration](#customize-the-configuration)
 
 ## Introduction
 
