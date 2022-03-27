@@ -8,7 +8,9 @@
 
         <q-card-section>
           <div class="text-h3 text-right">{{ expression || 0 }}</div>
-          <div class="text-h5 text-grey-5 text-right">{{ result }}</div>
+          <div v-show="result" class="text-h5 text-grey-5 text-right">
+            = {{ result }}
+          </div>
         </q-card-section>
 
         <q-card-section class="row q-col-gutter-xs">
@@ -27,8 +29,28 @@
 
 <script lang="ts">
 import { evaluate } from 'mathjs';
+import { useOperationsStore } from 'src/stores/operations';
 import { computed, defineComponent, ref } from 'vue';
 import Button from './Button.vue';
+
+const BUTTON_LIST = [
+  '1',
+  '2',
+  '3',
+  '+',
+  '4',
+  '5',
+  '6',
+  '-',
+  '7',
+  '8',
+  '9',
+  '*',
+  'C',
+  '0',
+  '/',
+  '=',
+];
 
 export default defineComponent({
   name: 'CalculatorPage',
@@ -42,34 +64,16 @@ export default defineComponent({
     },
   },
   setup() {
+    const operationsStore = useOperationsStore();
     const expression = ref('');
     const result = computed(() => {
-      let res = '';
       try {
-        res = evaluate(expression.value);
+        return evaluate(expression.value);
       } catch (error) {
-        return res;
+        return '';
       }
-      return res && `= ${res}`;
     });
-    const buttonList = [
-      '1',
-      '2',
-      '3',
-      '+',
-      '4',
-      '5',
-      '6',
-      '-',
-      '7',
-      '8',
-      '9',
-      '*',
-      'C',
-      '0',
-      '/',
-      '=',
-    ];
+
     const handleButton = (value: string) => {
       switch (value) {
         case 'C':
@@ -79,8 +83,14 @@ export default defineComponent({
 
         case '=':
           // Saves expression and value in store
+          operationsStore.add({
+            expression: expression.value,
+            result: result.value,
+          });
+          expression.value = result.value;
 
-          expression.value = '';
+          // Prints current history
+          console.log(operationsStore.history);
           break;
 
         default:
@@ -90,7 +100,7 @@ export default defineComponent({
     };
 
     return {
-      buttonList,
+      buttonList: BUTTON_LIST,
       expression,
       result,
       handleButton,
