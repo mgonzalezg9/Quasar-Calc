@@ -1,6 +1,6 @@
 <template>
   <div class="row justify-center">
-    <div class="col-12 col-md-8">
+    <div class="col-12">
       <q-card>
         <q-card-section class="bg-primary text-white">
           <div class="text-h6">{{ title }}</div>

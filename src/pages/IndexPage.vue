@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts">
-import Calculator from 'src/components/Calculator/index.vue';
+import Calculator from 'src/components/Calculator.vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
