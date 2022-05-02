@@ -3,8 +3,8 @@
 A simple Quasar calculator project. The goal is to learn Quasar technology along with Vue 3 composition API and Pinia store management.
 
 <p align="center">
-  <img src="./assets/calculator_screenshot_1.png"  />
-  <img src="./assets/calculator_screenshot_2.png" width="44%" />
+  <img src="./assets/calculator_screenshot_1.png" width="50%"  />
+  <img src="./assets/calculator_screenshot_2.png" width="50%" />
 </p>
 
 ## Table Of Contents
