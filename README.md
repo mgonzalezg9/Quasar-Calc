@@ -1,10 +1,16 @@
 # Quasar Calculator
 
+A simple Quasar calculator project. The goal is to learn Quasar technology along with Vue 3 composition API and Pinia store management.
+
+<p align="center">
+  <img src="./assets/calculator_screenshot_1.png"  />
+  <img src="./assets/calculator_screenshot_2.png" width="44%" />
+</p>
+
 ## Table Of Contents
 
 - [Quasar Calculator](#quasar-calculator)
   - [Table Of Contents](#table-of-contents)
-  - [Introduction](#introduction)
   - [Technologies](#technologies)
   - [Install the dependencies](#install-the-dependencies)
     - [Start the app in development mode (hot-code reloading, error reporting, etc.)](#start-the-app-in-development-mode-hot-code-reloading-error-reporting-etc)
@@ -13,10 +19,6 @@
     - [Build the app for production](#build-the-app-for-production)
     - [Android build](#android-build)
     - [Customize the configuration](#customize-the-configuration)
-
-## Introduction
-
-A simple Quasar calculator project. The goal is to learn Quasar technology along with Vue 3 composition API and Pinia store management.
 
 ## Technologies
 
