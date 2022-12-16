@@ -25,7 +25,7 @@ A simple Quasar calculator project. The goal is to learn Quasar technology along
 - [TypeScript](https://www.typescriptlang.org/)
 - [Quasar](https://quasar.dev/)
 - [Vue 3](https://vuejs.org/)
-- [Pinia](https://reactnavigation.org/)
+- [Pinia](https://pinia.vuejs.org/)
 - [MathJS](https://www.npmjs.com/package/mathjs)
 - [ElectronJS](https://www.electronjs.org/)
 
